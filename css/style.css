@@ -1,0 +1,161 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --yellow: hsl(47, 88%, 63%);
+  --gray500: hsl(0, 0%, 42%);
+  --gray950: hsl(0, 0%, 7%);
+
+  /* font weights */
+  --figtree-medium: 500;
+  --figtree-bold: bold;
+  --figtree-extra-bold: 800;
+}
+
+html {
+  font-family: Figtree, Verdana, Arial, sans-serif;
+  background-color: var(--yellow);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /*
+    Mobile first
+      width: 327px;
+      height: 501px;
+  */
+  display: flex;
+  flex-direction: column;
+  gap: 1.75em;
+  width: 327px;
+  height: 501px;
+  padding: 1.5em;
+  background-color: var(--white);
+  color: var(--gray500);
+  border: solid var(--gray950);
+  border-radius: 20px;
+  box-shadow: 8px 8px var(--gray950);
+}
+
+.card-image {
+  display: flex;
+  width: 279px;
+  height: 200px;
+  color: var(--gray950);
+  border-radius: 10px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-image img {
+  /* 336 x 201 */
+  width: 336px;
+  height: 200px;
+  color: var(--white);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: var(--gray950);
+}
+
+.card-category {
+  box-sizing: border-box;
+  width: fit-content;
+  font-weight: var(--figtree-extra-bold);
+  font-size: 0.75em;
+  padding: 4px 12px;
+  background-color: var(--yellow);
+  color: var(--gray950);
+  border-radius: 4px;
+}
+
+.card-date {
+  font-weight: var(--figtree-medium);
+  font-size: 0.75em;
+  color: var(--gray950);
+}
+
+.card-title {
+  font-weight: var(--figtree-extra-bold);
+  font-size: 1.25em;
+  color: var(--gray950);
+}
+
+.card-description {
+  color: var(--gray950);
+}
+
+.card-description p {
+  font-size: 0.875em;
+  font-weight: var(--figtree-medium);
+  line-height: 1.5em;
+  color: var(--gray500);
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  color: var(--gray950);
+}
+
+.card-author img {
+  width: 32px;
+  height: 32px;
+  color: var(--gray950);
+}
+
+.card-author span {
+  width: 85px;
+  height: 21px;
+  font-weight: var(--figtree-extra-bold);
+  font-size: 0.875em;
+  color: var(--gray950);
+}
+
+@media (min-width: 540px) {
+  .card {
+    /*
+      Surface Duo (width: 540px) and larger
+        width: 384px;
+        height: 522px;
+    */
+    width: 384px;
+    height: 522px;
+  }
+  .card-image {
+    width: 336px;
+    height: 200px;
+  }
+  .card-category {
+    font-size: 0.875em;
+  }
+  .card-date {
+    font-size: 0.875em;
+  }
+  .card-title {
+    font-size: 1.5em;
+  }
+  .card-title:hover {
+    color: var(--yellow);
+  }
+  .card-description p {
+    font-size: 1em;
+  }
+}
