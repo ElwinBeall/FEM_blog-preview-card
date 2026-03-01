@@ -15,7 +15,7 @@ This is my solution to the [Blog preview card challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments**
+- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github repo (this page)](https://github.com/ElwinBeall/FEM_blog-preview-card)
+- Live Site URL: [github.io page](https://elwinbeall.github.io/FEM_blog-preview-card/)
 
 ## My process
 
@@ -107,6 +107,6 @@ I haven't gotten very involved in using AI yet.  I've checked out Ollama and wri
 - Elwin Beall - [Elwin Beall](https://www.your-site.com)
 - Frontend Mentor - [@ElwinBeall](https://www.frontendmentor.io/profile/ElwinBeall)
 
-## Acknowledgments
+## Acknowledgements
 
-Thanks to everyone who has reviewed my challenges, commented or helped out in some way.  Also, if you like streaming music when you code, try [soma fm](https://somafm.com/listen/).
+Thanks to everyone who has reviewed my challenges, commented or helped out in some way.
